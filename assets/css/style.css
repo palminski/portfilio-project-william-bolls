@@ -1,19 +1,28 @@
 * {
     margin: 0;
 }
+body{
+    background-image: url("../images/backgrounds-borders/paperBackground.png");
+}
 
 header{
     position: relative;
     display: flex;
+    height: 100px;
     justify-content: space-between;
     background-color: rgb(154, 154, 231);
     border-bottom: 3px solid rgb(67, 70, 212);
+    align-items: center;
     padding: 5px;
 }
 header h1{
     position: relative;
-    left: 12px;
+    font-size: 46px;
+    left: 40px;
+    color: black;
 }
+
+
 header ul {
     width: 300px;
     display: flex;
@@ -22,11 +31,21 @@ header ul {
     align-items: center;
     flex-wrap: wrap;
 }
-header ul li {
+
+header ul li{
     background-color: rgb(76, 148, 216, 0.5);
-    padding: 5px;
+    padding: 10px 20px;
+    
     border: 1px solid black;
+    border-radius: 10px;
+    color: black;
 }
+header a{
+    text-decoration: none;
+ 
+}
+
 header ul li:hover {
     background-color: rgb(76, 148, 216);
+    border-im
 }
