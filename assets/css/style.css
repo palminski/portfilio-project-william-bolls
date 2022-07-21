@@ -56,3 +56,28 @@ header ul li:hover {
     height: 650px;
     width: 100%;
 }
+/* cards */
+section{
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+.card{
+    border: 50px;
+    height: 500px;
+    background-color: aqua;
+    border-bottom: 3px solid black;
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card img {
+    margin: 100px;
+    border: 5px solid black;
+}
+
+.text {
+    flex-grow: 1;
+    background-color: blue;
+}
