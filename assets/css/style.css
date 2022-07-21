@@ -4,7 +4,7 @@
 body{
     background-image: url("../images/backgrounds-borders/paperBackground.png");
 }
-
+ /* Header */
 header{
     position: relative;
     display: flex;
@@ -47,5 +47,12 @@ header a{
 
 header ul li:hover {
     background-color: rgb(76, 148, 216);
-    border-im
+    
+}
+/* Hero */
+.hero{
+    background-image: url(../images/hero-placeholder-chimp.png);
+    background-size: cover;
+    height: 650px;
+    width: 100%;
 }
