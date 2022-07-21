@@ -107,6 +107,13 @@ section{
     background-color: aqua;
 }
 
+/* Footer */
+footer {
+    height: 100px;
+    background-color: rgb(154, 154, 231);
+    border-top: 3px solid rgb(67, 70, 212);
+}
+
 /* Utility */
 .align-right {
     text-align: right;
@@ -114,3 +121,4 @@ section{
 .align-left {
     text-align: left;
 }
+
