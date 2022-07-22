@@ -232,9 +232,9 @@ footer {
 
 @media only screen and (max-width: 768px) {
     
-    .card, .mini-card, footer, header{
+    /* .card, .mini-card, footer, header{
         border: 0;
         background-color: rgb(199,177,142);
-    }
+    } */
     
 }
