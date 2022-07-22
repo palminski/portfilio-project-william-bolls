@@ -2,7 +2,8 @@
     margin: 0;
 }
 body{
-    background-image: url("../images/backgrounds-borders/paperBackground.png");
+    /* background-image: url("../images/backgrounds-borders/paperBackground.png"); */
+    background-color: rgb(219, 219, 219);
 }
  /* Header */
 header{
@@ -10,21 +11,26 @@ header{
     display: flex;
     height: 100px;
     justify-content: space-between;
-    background-color: rgb(154, 154, 231);
-    border-bottom: 3px solid rgb(67, 70, 212);
+    /* background-color: rgb(154, 154, 231); */
+    border-bottom: 35px solid transparent;
+    border-image: url("../images/backgrounds-borders/paperBorder.png");
+    border-image-slice: 50 fill;
+    border-image-repeat: repeat;
+    /* box-shadow: 10px 10px black; */
+    filter: drop-shadow(30px, 10px,4px, black);
     align-items: center;
     padding: 5px;
 }
 header h1{
     position: relative;
-    font-size: 46px;
+    font-size: 65px;
     left: 40px;
     color: black;
 }
 
 
 header ul {
-    width: 300px;
+    width: auto;
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -35,7 +41,8 @@ header ul {
 header ul li{
     background-color: rgb(76, 148, 216, 0.5);
     padding: 10px 20px;
-    
+    margin: 10px;
+    font-size: 25px;
     border: 1px solid black;
     border-radius: 10px;
     color: black;
@@ -51,7 +58,9 @@ header ul li:hover {
 }
 /* Hero */
 .hero{
-    background-image: url(../images/hero-placeholder-chimp.png);
+    position: relative;
+    bottom: px;
+    /* background-image: url(../images/hero-placeholder-chimp.png); */
     background-size: cover;
     height: 650px;
     width: 100%;
@@ -59,33 +68,41 @@ header ul li:hover {
 /* cards */
 section{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 } 
 
 .card{
-    margin: 10px;
-    border: 50px;
-    height: auto;
-    background-color: rgb(148, 207, 207);
+    margin: 10px; 
+    width: auto;
+    height: auto; 
+    border: 35px solid black;
+    border-image: url("../images/backgrounds-borders/paperBorder.png");
+    border-image-slice: 50 fill;
+    border-image-repeat: repeat;
     flex: 1 0 1;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-around;
     flex-wrap: wrap;
     
 }
 
 .card img {
-    margin: 100px 10px;
-    flex: 1 0 0;
+    border-radius: 25px;
+    margin: 20px;
+    flex: 1 0 0 ;
+    height: 408px;
+    width: 612px;
     /* border: 5px solid black; */
 }
 
 .text {
-    width: auto;
-    margin: 100px 25px;
+    border-radius: 25px;
+    width: 500px;
+    margin: 20px;
     position: relative;
     flex: 2 0 0;
-    background-color: rgb(138, 138, 172);
+    background-color: rgb(219, 219, 219);
 }
 
 .text h2{
@@ -99,24 +116,28 @@ section{
 
 
 .see-more p{
+    border-radius: 25px;
     font-size: 40px;
     display: inline;
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: rgba(127, 255, 212, 0.404);
+    background-color: rgba(127, 255, 212, 0);
     padding: 5px;
 
 }
 .see-more p:hover {
-    background-color: aqua;
+    background-color: rgba(126, 126, 126, 0.39);
 }
 
 /* Footer */
 footer {
-    height: 100px;
-    background-color: rgb(154, 154, 231);
-    border-top: 3px solid rgb(67, 70, 212);
+    margin-top: 35px;
+    height: 25px;
+    border-top: 35px solid rgb(67, 70, 212);
+    border-image: url("../images/backgrounds-borders/paperBorder.png");
+    border-image-slice: 50 fill;
+    border-image-repeat: repeat;
 }
 
 /* Utility */
