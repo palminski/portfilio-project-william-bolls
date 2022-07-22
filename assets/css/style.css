@@ -4,6 +4,7 @@
 body{
     background-image: url("../images/backgrounds-borders/graphpaper.jpg");
     /* background-color: rgb(219, 219, 219); */
+    width: 100%;
 }
 a{
     color: black;
@@ -17,7 +18,9 @@ a:visited{
 header{
     position: relative;
     display: flex;
-    height: 100px;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
     justify-content: space-between;
     /* background-color: rgb(154, 154, 231); */
     border-bottom: 35px solid transparent;
@@ -121,7 +124,6 @@ section{
 .see-more p{
     border-radius: 25px;
     font-size: 40px;
-    display: inline;
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -158,13 +160,14 @@ section{
 .mini-card img {
     border-radius: 25px;
     width: 250px;
+    margin-top: 20px;
 }
 .mini-card .text {
     background-color: rgb(219, 219, 219);
     width: 250px;
     height: 408px;
 }
-.mini-card h3 {
+.mini-card h2 {
     text-align: center;
     font-size: 35px;
 }
@@ -172,6 +175,7 @@ section{
 footer {
     margin-top: 35px;
     height: 25px;
+    width: 100%;
     border-top: 35px solid rgb(67, 70, 212);
     border-image: url("../images/backgrounds-borders/paperBorder.png");
     border-image-slice: 50 fill;
@@ -186,3 +190,51 @@ footer {
     text-align: left;
 }
 
+
+
+/* media queries */
+@media only screen and (max-width: 1204px) {
+
+    .mini-cards {
+        flex-direction: column;
+    }
+    .mini-card img {
+        border-radius: 25px;
+        height: 408px;
+        width: 612px;
+    }
+    .mini-card .text {
+        width: 612px;
+    }
+    .mini-card p {
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 1056px) {
+    
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text {
+        text-align: center;
+        width: 612px;
+    }
+    .text-before-image{
+        order: 2;
+    }
+    .see-more p{
+        position: static;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .card, .mini-card, footer, header{
+        border: 0;
+        background-color: rgb(199,177,142);
+    }
+    
+}
