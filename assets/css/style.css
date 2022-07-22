@@ -64,10 +64,11 @@ header ul li:hover {
 /* Hero */
 /* .hero{
     position: relative;
-    bottom: px;
-    background-image: url(../images/hero-placeholder-chimp.png);
+    z-index: -1;
+    bottom: 50px;
+    background-image: url(../images/images/Hero_Images_for_eLearning53.jpeg);
     background-size: cover;
-    height: 650px;
+    height: 900px;
     width: 100%;
 } */
 /* cards */
