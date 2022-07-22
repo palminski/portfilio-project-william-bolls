@@ -2,8 +2,8 @@
     margin: 0;
 }
 body{
-    /* background-image: url("../images/backgrounds-borders/paperBackground.png"); */
-    background-color: rgb(219, 219, 219);
+    background-image: url("../images/backgrounds-borders/graphpaper.jpg");
+    /* background-color: rgb(219, 219, 219); */
 }
 a{
     color: black;
@@ -81,7 +81,7 @@ section{
 
 .card{
     margin: 10px; 
-    width: 60%;
+    /* width: 90%; */
     height: auto; 
     border: 35px solid black;
     border-image: url("../images/backgrounds-borders/paperBorder.png");
@@ -103,8 +103,8 @@ section{
 }
 .text {
     border-radius: 25px;
-    /* height: 408px;
-    width: 500px; */
+    height: 408px;
+    width: 500px;
     margin: 20px;
     position: relative;
     flex: 2 0 0;
@@ -135,8 +135,8 @@ section{
 
 .mini-cards {
     display: flex;
-    width: 60%;
-    justify-content: space-between;
+    
+    justify-content: space-evenly;
 
 }
 .mini-card {
@@ -160,8 +160,9 @@ section{
     width: 250px;
 }
 .mini-card .text {
-    background-color: transparent;
+    background-color: rgb(219, 219, 219);
     width: 250px;
+    height: 408px;
 }
 .mini-card h3 {
     text-align: center;
