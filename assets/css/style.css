@@ -30,7 +30,7 @@ header{
     /* box-shadow: 10px 10px black; */
     filter: drop-shadow(30px, 10px,4px, black);
     align-items: center;
-    padding: 5px;
+
 }
 header h1{
     position: relative;
