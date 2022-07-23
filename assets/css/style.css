@@ -2,7 +2,7 @@
     margin: 0;
 }
 body{
-    background-image: url("../images/backgrounds-borders/graphpaper.jpg");
+    background-image: url("../images/backgrounds-borders/graphpaper.png");
     /* background-color: rgb(219, 219, 219); */
     width: 100%;
 }
@@ -32,6 +32,10 @@ header{
     align-items: center;
 
 }
+header{
+    position: relative;
+    bottom: 0;
+}
 header h1{
     position: relative;
     font-size: 65px;
@@ -51,30 +55,47 @@ header ul {
 }
 
 header ul li{
-    background-color: rgb(76, 148, 216, 0.5);
+    /* background-color: rgb(76, 148, 216, 0.5); */
     padding: 10px 20px;
     margin: 10px;
-    font-size: 25px;
-    border: 1px solid black;
+    font-size: 30px;
+    /* border: 1px solid black; */
     border-radius: 10px;
     color: black;
 }
 
 
-header ul li:hover {
-    background-color: rgb(76, 148, 216);
-    
+header ul a li:hover, header a h1:hover {
+    color: rgb(63, 63, 63);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.295);
+}
+.current-page {
+    color: rgb(105, 105, 105);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.295);
 }
 /* Hero */
-/* .hero{
+
+.hero{
+    margin: 0 auto;
     position: relative;
     z-index: -1;
     bottom: 50px;
     background-image: url(../images/images/Hero_Images_for_eLearning53.jpeg);
     background-size: cover;
-    height: 900px;
+    height: 500px;
     width: 100%;
-} */
+    /* max-width: 1300px; */
+}
+.hero h2{
+
+    position: relative;
+    top: 200px;
+    margin-left: 10%;
+    color: white;
+    font-size:100px;
+    text-align: left;
+}
+
 /* cards */
 section{
     display: flex;
@@ -99,7 +120,7 @@ section{
     
 }
 .card img {
-    border-radius: 25px;
+    border-radius: 10px;
     margin: 20px;
     flex: 1 0 0 ;
     height: 408px;
@@ -107,7 +128,7 @@ section{
     /* border: 5px solid black; */
 }
 .text {
-    border-radius: 25px;
+    border-radius: 10px;
     height: 408px;
     width: 500px;
     margin: 20px;
@@ -122,19 +143,22 @@ section{
 .text p {
     padding: 0 25px;
     font-size: 25px;
+    margin-bottom: 5px;
 }
 .see-more p{
-    border-radius: 25px;
+    border-radius: 10px;
     font-size: 40px;
     position: absolute;
     bottom: 20px;
     right: 20px;
-    background-color: rgba(127, 255, 212, 0);
+    /* background-color: rgba(16, 128, 90, 0); */
     padding: 5px;
 
 }
 .see-more p:hover {
-    background-color: rgba(126, 126, 126, 0.39);
+    color: rgb(131, 131, 131);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.295);
+    /* background-color: rgba(126, 126, 126, 0.39); */
 }
 
 .mini-cards {
@@ -160,7 +184,7 @@ section{
     border-image-repeat: repeat;
 }
 .mini-card img {
-    border-radius: 25px;
+    border-radius: 10px;
     width: 250px;
     margin-top: 20px;
 }
@@ -173,6 +197,20 @@ section{
     text-align: center;
     font-size: 35px;
 }
+
+/* About me Section */
+#About-Me .text {
+    text-align: center;
+}
+
+#About-Me img  {
+    border-radius: 50%;
+}
+hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
 /* Footer */
 footer {
     margin-top: 35px;
@@ -201,7 +239,7 @@ footer {
         flex-direction: column;
     }
     .mini-card img {
-        border-radius: 25px;
+        border-radius: 10px;
         height: 408px;
         width: 612px;
     }
@@ -220,6 +258,11 @@ footer {
     }
     header h1 {
         position: static;
+    }
+
+    .hero h2 {
+        margin: auto;
+        text-align: center;
     }
 
     .card {
