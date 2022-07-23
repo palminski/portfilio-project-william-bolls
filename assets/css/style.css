@@ -37,6 +37,7 @@ header h1{
     font-size: 65px;
     left: 40px;
     color: black;
+    text-align: center;
 }
 
 
@@ -213,7 +214,13 @@ footer {
 }
 
 @media only screen and (max-width: 1056px) {
-    
+    header{
+        flex-direction: column;
+    }
+    header h1 {
+        position: static;
+    }
+
     .card {
         flex-direction: column;
         align-items: center;
@@ -233,7 +240,58 @@ footer {
 @media only screen and (max-width: 768px) {
     
     footer, header{
-        width: 768px;
+        /* width: 900px; */
+        
     }
+    .text {
+        text-align: center;
+
+        width: 90%;
+        height: auto;
+    }
+    .card img {
+    
+        width: 90%;
+        height: auto;
+    }
+    .mini-card img {
+        width: 90%;
+        height: auto;
+    }
+    .mini-card .text {
+        width: 90%;
+        height: auto;
+    }
+
+    
+    .card{
+        border: 0;
+        border-top: 35px solid black;
+        border-bottom: 35px solid black;
+        border-image: url("../images/backgrounds-borders/paperBorder.png");
+        border-image-slice: 50 fill;
+        border-image-repeat: repeat;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .mini-card{
+        margin: 0;
+        border: 0 solid black;
+        border-top: 35px solid black;
+        border-bottom: 35px solid black;
+        border-image: url("../images/backgrounds-borders/paperBorder.png");
+        border-image-slice: 50 fill;
+        border-image-repeat: repeat;
+    }
+
+    header {
+        padding: 0;
+
+    }
+    header ul{
+        padding-inline-start: 0px;
+    }
+
     
 }
