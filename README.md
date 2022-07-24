@@ -18,3 +18,4 @@ Eventually I realised this and fixed it by removing the side margins for a varie
 Overall I am pretty pleased witht the result, although I would like to possibly change the border image to one that looks a bit nicer.
 Additionally, as of right now the navigation buttons on the index will jump to the card with the matching ID, wth the exception of the About Me button, I would rather they link directly to the page.
 I made it like this because in the assignment requirements this was listed, but on the other pages they behave more in line with how I want them to.
+Also, I want to quickly add that the image of me for the about me section is not the final image that will appear on the page. I just used it as a placeholder because I thoughtt it was funny. Same with the images of monkeys working at computers.
