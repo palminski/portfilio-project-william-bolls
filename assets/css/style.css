@@ -3,7 +3,6 @@
 }
 body{
     background-image: url("../images/backgrounds-borders/graphpaper.png");
-    /* background-color: rgb(219, 219, 219); */
     width: 100%;
 }
 a{
@@ -22,12 +21,10 @@ header{
     height: auto;
     width: 100%;
     justify-content: space-between;
-    /* background-color: rgb(154, 154, 231); */
     border-bottom: 35px solid transparent;
     border-image: url("../images/backgrounds-borders/paperBorder.png");
     border-image-slice: 50 fill;
     border-image-repeat: repeat;
-    /* box-shadow: 10px 10px black; */
     filter: drop-shadow(30px, 10px,4px, black);
     align-items: center;
 
@@ -55,15 +52,12 @@ header ul {
 }
 
 header ul li{
-    /* background-color: rgb(76, 148, 216, 0.5); */
     padding: 10px 20px;
     margin: 10px;
     font-size: 30px;
-    /* border: 1px solid black; */
     border-radius: 10px;
     color: black;
 }
-
 
 header ul a li:hover, header a h1:hover {
     color: rgb(63, 63, 63);
@@ -73,6 +67,8 @@ header ul a li:hover, header a h1:hover {
     color: rgb(105, 105, 105);
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.295);
 }
+
+
 /* Hero */
 
 .hero{
@@ -80,11 +76,10 @@ header ul a li:hover, header a h1:hover {
     position: relative;
     z-index: -1;
     bottom: 50px;
-    background-image: url(../images/images/Hero_Images_for_eLearning53.jpeg);
+    background-image: url(../images/Hero_Images_for_eLearning53.jpeg);
     background-size: cover;
     height: 500px;
     width: 100%;
-    /* max-width: 1300px; */
 }
 .hero h2{
 
@@ -107,16 +102,13 @@ section{
 
 .card{
     margin: 10px; 
-    /* width: 90%; */
     height: auto; 
     border: 35px solid black;
     border-image: url("../images/backgrounds-borders/paperBorder.png");
     border-image-slice: 50 fill;
     border-image-repeat: repeat;
-    flex: 1 0 1;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     
 }
 .card img {
@@ -125,7 +117,6 @@ section{
     flex: 1 0 0 ;
     height: 408px;
     width: 612px;
-    /* border: 5px solid black; */
 }
 .text {
     border-radius: 10px;
@@ -151,22 +142,19 @@ section{
     position: absolute;
     bottom: 20px;
     right: 20px;
-    /* background-color: rgba(16, 128, 90, 0); */
     padding: 5px;
 
 }
 .see-more p:hover {
     color: rgb(131, 131, 131);
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.295);
-    /* background-color: rgba(126, 126, 126, 0.39); */
 }
 
 .mini-cards {
     display: flex;
-    
-    justify-content: space-evenly;
 
 }
+
 .mini-card {
     
     margin: 20px;
@@ -283,32 +271,20 @@ footer {
 
 @media only screen and (max-width: 768px) {
     
-    footer, header{
-        /* width: 900px; */
-        
+    .mini-cards{
+        width: 100%;
     }
-    .text {
+    .text, .mini-card .text {
         text-align: center;
-
         width: 90%;
         height: auto;
     }
-    .card img {
-    
-        width: 90%;
-        height: auto;
-    }
-    .mini-card img {
-        width: 90%;
-        height: auto;
-    }
-    .mini-card .text {
+    .card img, .mini-card img {
         width: 90%;
         height: auto;
     }
 
-    
-    .card{
+    .card, .mini-card{
         border: 0;
         border-top: 35px solid black;
         border-bottom: 35px solid black;
@@ -317,25 +293,29 @@ footer {
         border-image-repeat: repeat;
         margin: 10px 0;
         width: 100%;
+        
     }
-
-    .mini-card{
-        margin: 0;
-        border: 0 solid black;
-        border-top: 35px solid black;
-        border-bottom: 35px solid black;
-        border-image: url("../images/backgrounds-borders/paperBorder.png");
-        border-image-slice: 50 fill;
-        border-image-repeat: repeat;
-    }
-
     header {
         padding: 0;
-
     }
     header ul{
         padding-inline-start: 0px;
     }
 
-    
+    header h1 {
+        font-size: 50px;
+    }
+    header ul li {
+        font-size: 20px;
+    }
+    .hero h2{
+        font-size: 60px;
+    }
+    .mini-card h2, .text h2 {
+        padding: 0;
+        font-size: 30px;
+    }
+    .text p {
+        font-size: 15px;
+    }
 }
